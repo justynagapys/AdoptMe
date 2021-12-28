@@ -1,7 +1,7 @@
 function NavItem({icon, title}) {
     return (
         <div>
-            <Image />
+            <img></img>
         </div>
     )
 }
