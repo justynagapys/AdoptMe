@@ -17,7 +17,7 @@ function Navbar() {
             </div>
             <div className="flex mr-5">
                 <Image className="object-contain" src={"/adoption.png"} width={40} height={40} />
-                <h1 className="text-adopt-pink text-4xl font-mono italic ml-3">AdoptMe</h1>
+                <h1 className="text-adopt-pink text-4xl italic ml-3">AdoptMe</h1>
             </div>
         </nav>
     )
