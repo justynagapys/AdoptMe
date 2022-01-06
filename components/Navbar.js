@@ -12,35 +12,23 @@ function Navbar() {
                 <Link href="/">
                     <a><NavbarItem Icon={AiFillHome} title="HOME"  /></a>
                 </Link>
-                <Link href="/dogs">
-                    <a>
-                        <NavbarItem Icon={FaDog} title="DOGS" />
-                    </a>
+                <Link href="/animals/">
+                    <a><NavbarItem Icon={FaDog} title="DOGS" /></a>
                 </Link>
                 <Link href="/cats">
-                    <a>
-                        <NavbarItem Icon={FaCat} title="CATS" />
-                    </a>
+                    <a><NavbarItem Icon={FaCat} title="CATS" /></a>
                 </Link>
                 <Link href="/rabbits">
-                    <a>
-                        <NavbarItem Icon={GiRabbit} title="RABBITS" />
-                    </a>
+                    <a><NavbarItem Icon={GiRabbit} title="RABBITS" /></a>
                 </Link>
                 <Link href="/birds">
-                    <a>
-                        <NavbarItem Icon={GiHummingbird} title="BIRDS" />
-                    </a>
+                    <a><NavbarItem Icon={GiHummingbird} title="BIRDS" /></a>
                 </Link>
                 <Link href="/horses">
-                    <a>
-                        <NavbarItem Icon={FaHorse} title="HORSES" />
-                    </a>
+                    <a><NavbarItem Icon={FaHorse} title="HORSES" /></a>
                 </Link>
                 <Link href="/pigs">
-                    <a>
-                        <NavbarItem Icon={GiPig} title="PIGS" />
-                    </a>
+                    <a><NavbarItem Icon={GiPig} title="PIGS" /></a>
                 </Link>
             </div>
             <div className="flex mr-5">
