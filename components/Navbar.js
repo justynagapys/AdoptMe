@@ -12,7 +12,7 @@ function Navbar() {
                 <Link href="/">
                     <a><NavbarItem Icon={AiFillHome} title="HOME"  /></a>
                 </Link>
-                <Link href="/animals/">
+                <Link href="/dogs">
                     <a><NavbarItem Icon={FaDog} title="DOGS" /></a>
                 </Link>
                 <Link href="/cats">

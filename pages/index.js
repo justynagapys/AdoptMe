@@ -1,39 +1,43 @@
-import { useEffect, useState, useContext } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from '../components/Layout'
-import AnimalsResults from '../components/AnimalsResults'
-import { AuthContext } from "./_app";
+import Animals from '../components/Animals'
+import NotFound from '../components/NotFound'
 
-export default function Home() {
-  const [results, setResults] = useState(null);
-  const accessToken = useContext(AuthContext);
-  useEffect(() => {
-    if (accessToken === null) return;
-    const fetchPets = async () => {
-      const animalResults = await fetch(
-        "https://api.petfinder.com/v2/animals",
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-      const json = await animalResults.json();
-      setResults(json.animals);
-    };
-    fetchPets();
-  }, [accessToken]);
-  if (results === null) return null;
+export default function App() {
   return(
-     <Layout>
-
-      <AnimalsResults results={results} />
-
-      {/* / => AnimalsResults results={results}
-      /dogs => AnimalsResults results={+type=dogs}
-      /cats => .... cats
-      ...
-      * => NotFound */}
-
-    </Layout>
+    // <Layout>
+    //   <Animals animalType="animals"/>
+    // </Layout>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route path="/">
+            <Animals animalType="animals"/>
+          </Route>
+          <Route path="/dogs">
+            <Animals animalType="animals?type=Dog"/>
+          </Route>
+          <Route path="/cats">
+            <Animals animalType="animals?type=Cat"/>
+          </Route>
+          <Route path="/rabbits">
+            <Animals animalType="animals?type=Rabbit"/>
+          </Route>
+          <Route path="/birds">
+            <Animals animalType="animals?type=Bird"/>
+          </Route>
+          <Route path="/horses">
+            <Animals animalType="animals?type=Horse"/>
+          </Route>
+          <Route path="/pigs">
+            <Animals animalType="animals?type=Barnyard"/>
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </Layout>
+    </Router>
   );
-};
+}
