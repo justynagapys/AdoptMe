@@ -1,9 +1,9 @@
 import { AiFillHome } from "react-icons/ai";
 import { FaDog, FaCat,FaHorse } from 'react-icons/fa';
 import { GiRabbit, GiHummingbird, GiPig } from "react-icons/gi";
-import Image from "next/image"
-import NavbarItem from "./NavbarItem"
-import Link from 'next/link'
+import Image from "next/image";
+import NavbarItem from "./NavbarItem";
+import Link from 'next/link';
 
 function Navbar() {
     return (
