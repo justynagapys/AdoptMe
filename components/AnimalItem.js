@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  CardMedia,
-  Grid,
-  Card,
-  CardActionArea,
-  CardHeader,
-  CircularProgress,
-} from "@material-ui/core";
+import {CardMedia,Grid,Card,CardActionArea,CardHeader,CircularProgress} from "@material-ui/core";
 import { FiCameraOff } from 'react-icons/fi';
 import { makeStyles } from "@material-ui/core/styles";
 import Link from 'next/link';
@@ -71,6 +64,7 @@ const AnimalItem = (props) => {
 
   return (
     <Grid item xs={6} lg={3} style={{ padding: 5 }}>
+      {/* LINKOWANIE POD DETAILS */}
       <Link href={`animals/details/${result.id}`} as={`/animals/details/${result.id}`}>
         <Card className={classes.card}>
           <CardActionArea>
