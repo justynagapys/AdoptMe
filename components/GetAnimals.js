@@ -1,15 +1,15 @@
 import { useEffect, useState, useContext } from "react";
-import AnimalsResults from '../components/AnimalsResults'
+import AnimalsResults from './AnimalsResults'
 import { AuthContext } from "../pages/_app";
 
-function Animals({animalType}) {
+function GetAnimals({animalType}) {
   const [results, setResults] = useState(null);
   const accessToken = useContext(AuthContext);
   useEffect(() => {
     if (accessToken === null) return;
     const fetchPets = async () => {
       const animalResults = await fetch(
-        `https://api.petfinder.com/v2/${animalType}`,
+        `https://api.petfinder.com/v2/animals?type=${animalType}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -27,4 +27,4 @@ function Animals({animalType}) {
   );
 };
 
-export default Animals;
+export default GetAnimals;

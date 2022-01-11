@@ -1,43 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from '../components/Layout'
-import Animals from '../components/Animals'
-import NotFound from '../components/NotFound'
+import { useEffect, useState, useContext } from "react";
+import AnimalsResults from '../components/AnimalsResults';
+import { AuthContext } from "../pages/_app";
 
 export default function App() {
+  const [results, setResults] = useState(null);
+  const accessToken = useContext(AuthContext);
+  useEffect(() => {
+    if (accessToken === null) return;
+    const fetchPets = async () => {
+      const animalResults = await fetch(
+        `https://api.petfinder.com/v2/animals`,
+        {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
+      const json = await animalResults.json();
+      setResults(json.animals);
+    };
+    fetchPets();
+  }, [accessToken]);
+  if (results === null) return null;
   return(
-    // <Layout>
-    //   <Animals animalType="animals"/>
-    // </Layout>
-    <Router>
-      <Layout>
-        <Switch>
-          <Route path="/">
-            <Animals animalType="animals"/>
-          </Route>
-          <Route path="/dogs">
-            <Animals animalType="animals?type=Dog"/>
-          </Route>
-          <Route path="/cats">
-            <Animals animalType="animals?type=Cat"/>
-          </Route>
-          <Route path="/rabbits">
-            <Animals animalType="animals?type=Rabbit"/>
-          </Route>
-          <Route path="/birds">
-            <Animals animalType="animals?type=Bird"/>
-          </Route>
-          <Route path="/horses">
-            <Animals animalType="animals?type=Horse"/>
-          </Route>
-          <Route path="/pigs">
-            <Animals animalType="animals?type=Barnyard"/>
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-      </Layout>
-    </Router>
+    <Layout>
+      <AnimalsResults results={results} />
+    </Layout>
   );
-}
+};
