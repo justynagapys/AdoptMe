@@ -1,6 +1,7 @@
 import { AiFillHome } from "react-icons/ai";
 import { FaDog, FaCat,FaHorse } from 'react-icons/fa';
 import { GiRabbit, GiHummingbird, GiPig } from "react-icons/gi";
+import {IoIosPeople} from 'react-icons/io'
 import Image from "next/image";
 import NavbarItem from "./NavbarItem";
 import Link from 'next/link';
@@ -29,6 +30,9 @@ function Navbar() {
                 </Link>
                 <Link href="animals/Barnyard" as="/animals/Barnyard">
                     <a><NavbarItem Icon={GiPig} title="BARTON" /></a>
+                </Link>
+                <Link href="aboutus" as="/aboutus">
+                    <a><NavbarItem Icon={IoIosPeople} title="ABOUT" /></a>
                 </Link>
             </div>
             <div className="flex mr-5">
