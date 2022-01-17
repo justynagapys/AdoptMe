@@ -5,9 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Link from 'next/link';
 
 const useStyles = makeStyles((theme) => ({
-  card: {
-    backgroundColor: theme.palette.primary.main,
-  },
   image: {
     height: 400,
     [theme.breakpoints.up("lg")]: {
@@ -46,7 +43,7 @@ const AnimalItem = (props) => {
     );
   } else {
     ImageComponent = () => (
-      <div
+      <div className="flex items-center justify-center"
         className={classes.image}
         style={{
           display: "flex",
@@ -56,34 +53,24 @@ const AnimalItem = (props) => {
           backgroundColor: "rgb(200,200,200)",
         }}
       >
-        <FiCameraOff size="2em"/>
-        <p>No photo found</p>
+        <FiCameraOff  className="center text-adopt-pink rounded-lg animate-pulse" size="5em"/>
+        <p className="center text-black rounded-lg animate-pulse">No photo found</p>
       </div>
     );
   }
 
   return (
     <Grid item xs={6} lg={3} style={{ padding: 5 }}>
-      {/* LINKOWANIE POD DETAILS */}
-      <Link href={`animals/details/${result.id}`} as={`/animals/details/${result.id}`}>
+      <Link href={result.url}>
         <Card className={classes.card}>
           <CardActionArea>
             <ImageComponent />
             <CardHeader
+            className=" hover:bg-hover-pink hover:text-black m-auto text-center bg-adopt-pink text-white"
               title={result.name}
-              titleTypographyProps={{
-                style: {
-                  margin: "auto",
-                  textAlign: "center",
-                  textDecoration: "none",
-                },
-                color: "textPrimary",
-                variant: "h6",
-              }}
             />
           </CardActionArea>
         </Card>
-      {/* </a> */}
       </Link>
     </Grid>
   );
