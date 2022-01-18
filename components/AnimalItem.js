@@ -44,15 +44,15 @@ return (
     <Grid item xs={6} lg={3} style={{ padding: 5}}>
       <div className="p-2 bg-gray-100 rounded-xl text-center">
         <AnimalPhoto className="object-cover rounded-xl"/>
-        <div className="p-2">
-          <h2 className="text-xl uppercase font-bold text-dark-purple underline decoration-adopt-pink">{result.name}</h2>
-          <div className="flex justify-center">
+        <div className="my-3">
+          <h2 className="text-xl uppercase font-bold text-dark-purple underline decoration-adopt-pink py-2" style={{ height: 40}}>{result.name}</h2>
+          <div className="flex justify-center mt-3">
             <InfoItem type="Age:" text={result.age}  />
             <InfoItem type="Gender:" text={result.gender}  />
             <InfoItem type="Size:" text={result.size}  />
             <InfoItem type="Coat:" text={result.coat}  />
           </div>
-          <div  style={{ height: 100}}>
+          <div style={{ height: 110}} className="my-3">
             <InfoItem type="Description:" text={result.description} />
           </div>
         </div>

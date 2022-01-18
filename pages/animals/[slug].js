@@ -8,7 +8,7 @@ export default function Animal() {
 
   return(
     <Layout>
-      <h1 className="text-3xl mb-6 text-center font-semibold text-adopt-pink">Our Lovely {slug}s:</h1>
+      <h1 className="text-3xl mb-6 text-center font-semibold text-icon-color">Our Lovely {slug}s:</h1>
       <GetAnimals animalType={slug}/>
     </Layout>
   );

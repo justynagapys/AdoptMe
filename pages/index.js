@@ -25,6 +25,7 @@ export default function App() {
   if (results === null) return null;
   return(
     <Layout>
+      <h1 className="text-3xl mb-6 text-center capitalize font-semibold text-icon-color">Our lovely animals:</h1>
       <AnimalsResults results={results} />
     </Layout>
   );
