@@ -13,13 +13,13 @@ const Slider = () => {
   return (
     <div>
       <SimpleImageSlider
-        width={896}
-        height={504}
+        width={800}
+        height={500}
         images={images}
         showBullets={true}
         showNavs={true}
         autoPlay={true}
-      />  
+      />
     </div>
   );
 }
