@@ -45,7 +45,7 @@ return (
       <div className="p-2 bg-gray-100 rounded-xl text-center">
         <AnimalPhoto className="object-cover rounded-xl"/>
         <div className="my-3">
-          <h2 className="text-xl uppercase font-bold text-dark-purple underline decoration-adopt-pink py-2" style={{ height: 40}}>{result.name}</h2>
+          <h2 className="text-xl uppercase font-bold text-dark-purple underline decoration-adopt-pink py-2" style={{ height: 40 }}>{result.name}</h2>
           <div className="flex justify-center mt-3">
             <InfoItem type="Age:" text={result.age}  />
             <InfoItem type="Gender:" text={result.gender}  />
