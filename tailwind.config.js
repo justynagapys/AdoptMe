@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'adopt-pink': '#fe646f',
         'icon-color': '#fff5f2',
+        'dark-purple': '#120311',
       },
     },
   },
