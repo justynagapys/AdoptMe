@@ -21,7 +21,7 @@ Frontend: React
 
 Framework CSS: Tailwind
 
-Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętami, które czekają na adopcję. Wykorzystane API jest aktualizowane codziennie, dzięki temu na stronie głównej aplikacja wyświetla informacje o dwudziestu ostatnio dodanych zwierzętach. Istnieje także możliwość filtrowania zwierząt ze względu na 6 rodzajów: psy, koty, króliki, ptaki, konie oraz zwierzęta gospodarskie. Poprzez naciśnięcie na dane zwierzę użytkownik przekierowany zostaje do strony, z której może dokonać jego adopcji.
+Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętami, które czekają na adopcję. Wykorzystane API jest aktualizowane codziennie, dzięki temu na stronie głównej aplikacja wyświetla informacje o dwudziestu ostatnio dodanych zwierzętach. Istnieje także możliwość filtrowania zwierząt ze względu na 6 rodzajów: psy, koty, króliki, ptaki, konie oraz zwierzęta gospodarskie. Poprzez naciśnięcie na przycisk "Adopt me"  przy danym zwierzęciu użytkownik przekierowany zostaje do strony, z której może dokonać jego adopcji.
 
 ## Technologie i narzędzia
 
