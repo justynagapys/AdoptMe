@@ -1,7 +1,7 @@
 # AdoptMe
 
 * [Informacje wstępne](#Informacje-wstępne)
-* [Technologie i narzędzia](#Technologie-i-narzedzia)
+* [Technologie i narzędzia](#Technologie-i-narzędzia)
 * [Interfejs](#Interfejs)
 * [Opis realizacji projektu](#Opis-realizacji-projektu)
 
@@ -17,13 +17,11 @@ Skład zespołu: Justyna Gapys, Natalia Skórowska
 
 Nazwa aplikacji: Adopt Me
 
-IDE: Visual Studio Code
-
 Frontend: React
 
 Framework CSS: Tailwind
 
-Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętami, które czekają na adopcję. Wykorzystane API jest aktualizowane codziennie, dzięki temu na stronie głównej aplikacja wyświetla informacje o dwudziestu ostatnio dodanych zwierzętach. Istnieje także możliwość filtrowania zwierząt ze względu na 6 rodzajów: psy, koty, króliki, ptaki, konie oraz zwierzęta gospodarskie.
+Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętami, które czekają na adopcję. Wykorzystane API jest aktualizowane codziennie, dzięki temu na stronie głównej aplikacja wyświetla informacje o dwudziestu ostatnio dodanych zwierzętach. Istnieje także możliwość filtrowania zwierząt ze względu na 6 rodzajów: psy, koty, króliki, ptaki, konie oraz zwierzęta gospodarskie. Poprzez naciśnięcie na dane zwierzę użytkownik przekierowany zostaje do strony, z której może dokonać jego adopcji.
 
 ## Technologie i narzędzia
 
@@ -37,8 +35,12 @@ Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętam
 | 6 | React Tooltip  | Tooltip  ukazujący się po najechaniu na button w zakładce 'About Us' |
 | 7 | Material UI  | Cardy znajdujące się w zakładce 'About Us', Grid na stronie głównej, CircularProgress |
 | 8 | API  | PetFinder |
+| 8 | IDE  | Visual Studio Code |
+
 
 ## Interfejs
+
+Interfejs aplikacji AdoptMe jest responsywny.
 
 Strona główna:
 
@@ -55,7 +57,6 @@ Strona danego gatunku:
 Zakładka About Us:
 
 ![About Us](./Imgs/aboutus.png)
-
 ![About Us](./Imgs/aboutus2.png)
 
 Slider ze zdjęciami zwierząt z każdej kategorii w zakładce 'About Us':
@@ -64,7 +65,7 @@ Slider ze zdjęciami zwierząt z każdej kategorii w zakładce 'About Us':
 
 Tooltip ukazujący się po najechaniu na przycisk:
 
-![Tooltip](./Imgs/Tooltip.gif)
+![Tooltip](./Imgs/Tooltip2.gif)
 
 Animacja ikony w wypadku braku zdjęcia zwierzaka:
 
@@ -80,22 +81,25 @@ Dedykowana strona błędu:
 
 ## Opis realizacji projektu
 
-1. Stworzenie React App, logo aplikacji oraz podpięcie wybranego api wraz z kluczami w pliku oauth-token.js.
+1.Stworzenie React App, logo aplikacji oraz podpięcie wybranego api wraz z kluczami w pliku oauth-token.js.
 
-2. Zaimplementowanie funkcji GetAnimals odpowiedzialnej za pobieranie  danych o ostatnio dodanych zwierzętach wraz z uwzględnieniem danego gatunku zwierząt.
+2.Zaimplementowanie funkcji GetAnimals odpowiedzialnej za pobieranie  danych o ostatnio dodanych zwierzętach wraz z uwzględnieniem danego gatunku zwierząt.
 
 ![Pobieranie danych z api](./Imgs/getanimals2.png)
 
-3. Konfiguracja mechanizmu routingu z wykorzystaniem Next.js oraz stworzenie panelu nawigacyjnego:
+3.Konfiguracja mechanizmu routingu z wykorzystaniem Next.js oraz stworzenie panelu nawigacyjnego:
 
 ![Panel nawigacyjny](./Imgs/navbarss2.png)
 
 ![Routing](./Imgs/slug2.png)
 
-4. Stylowanie strony głównej, wykorzystanie Grida z Reacta oraz Talwinda. Na stronie głównej jednorazowo wyświetla się 20 ostatnio dodanych zwierząt, kafelek z pojedynczym zwierzęciem zawiera jego zdjęcie, imię, informację o płci, wieku i wielkości oraz krótki opis jeśli taki został dodany.
-Po naciśnięciu na button "Adopt me" przy danym zwierzaku użytkownik zostaje przekierowany do strony danego zwierzeka na portalu petfinder.com gdzie można dokonać adopcji.
+4.Stylowanie strony głównej z wykorzystaniem Tailwinda
+- Wykorzystanie Grida z Reacta celem odpowiedniego ustawienia "kafelek" ze zwierzętami
+- Na stronie głównej jednorazowo wyświetla się 20 ostatnio dodanych zwierząt, kafelek z pojedynczym zwierzęciem zawiera jego zdjęcie, imię, informację o płci, wieku i wielkości oraz krótki opis jeśli taki został dodany.
+- Po naciśnięciu na button "Adopt me" przy danym zwierzaku użytkownik zostaje przekierowany do strony danego zwierzeka na portalu petfinder.com gdzie można dokonać adopcji.
+- Pulsująca React Icon pojawiająca się gdy nie ma zdjęcia zwierzęcia.
 
-5.Stworzenie globalnego koloru tła i własnych kolorów z użyciem Tailwinda
+5.Stworzenie globalnego koloru tła i własnych kolorów, styli z użyciem Tailwinda
 
 6.Stworzenie dedykowanej strony błędu:
 
