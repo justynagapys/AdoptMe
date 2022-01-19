@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AdoptMe
 
-## Getting Started
+* [Informacje wstępne](#Informacjewstępne)
+* [Technologie i narzędzia](#Technologieinarzedzia)
+* [Opis realizacji projektu](#Opisrealizacjiprojektu)
+* [Interfejs](#Interfejs)
 
-First, run the development server:
+## Informacje wstępne
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Przedmiot: Aplikacje webowe dla urządzeń mobilnych oraz Technologie Formatkowe
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rok akademicki: 2021/2022
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Grupa: S32-32
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Skład zespołu: Justyna Gapys, Natalia Skórowska 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Nazwa aplikacji: Adopt Me
 
-## Learn More
+IDE: Visual Studio Code
 
-To learn more about Next.js, take a look at the following resources:
+Frontend: React
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Framework CSS: Tailwind
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Cel aplikacji: Aplikacja "Adopt me" umożliwia przegląd katalogu ze zwierzętami, które czekają na adopcję. Wykorzystane API jest aktualizowane codziennie, dzięki temu na stronie głównej aplikacja wyświetla informacje o dwudziestu ostatnio dodanych zwierzętach. Istnieje także możliwość filtrowania zwierząt ze względu na 6 rodzajów: psy, koty, króliki, ptaki, konie oraz zwierzęta gospodarskie.
 
-## Deploy on Vercel
+## Technologie i narzędzia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+|ID | Nazwa | Zastosowanie |
+| ------------- | ------------- |------|
+| 1 | React  | Frontend |
+| 2 | Next.js  | Routing w aplikacji (zamiast react router) |
+| 3 | Tailwind  | FrameworkCSS - własne stylowanie, zdefiniowane własne kolory oraz animacje elementów np. ruchome ikony w panelu nawigacji |
+| 4 | React icons  | Ikony znajdujące się w zakładce 'About Us' oraz w panelu nawigacyjnym |
+| 5 | React Simple-Image-Slider  | Karuzela ze zdjęciami w zakładce 'About Us' |
+| 6 | React Tooltip  | Tooltip  ukazujący się po najechaniu na button w zakładce 'About Us' |
+| 7 | Material UI  | Cardy znajdujące się w zakładce 'About Us', Grid na stronie głównej |
+| 8 | API  | PetFinder |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
