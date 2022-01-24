@@ -115,9 +115,11 @@ Dedykowana strona błędu:
 ## Technologie pozazajęciowe
 
 |ID | Nazwa | 
+|----|----|
 | 1 | Next.js  | 
 | 2 | Tailwind  | 
 | 3 | React icons |
 | 4 | React Simple-Image-Slider  |
+| 5| React Tooltip |
 
 
