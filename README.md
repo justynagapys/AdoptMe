@@ -4,6 +4,7 @@
 * [Technologie i narzędzia](#Technologie-i-narzędzia)
 * [Interfejs](#Interfejs)
 * [Opis realizacji projektu](#Opis-realizacji-projektu)
+* [Technologie pozazajęciowe](#Technologie-pozazajęciowe)
 
 ## Informacje wstępne
 
@@ -110,4 +111,13 @@ Dedykowana strona błędu:
 - 4 Cardy zawierające informacje o PetFinder. W nich zastosowane react-icons oraz gradient na tło nagłówka
 - Przycisk "Petfinder.com", który po naciśnięciu przenosi użytkownika na stronę główną petfinder.com
 - Do wyżej opisanego przycisku zaimplementowany Tooltip wyświetlający się po najechaniu na przycisk
+
+## Technologie pozazajęciowe
+
+|ID | Nazwa | 
+| 1 | Next.js  | 
+| 2 | Tailwind  | 
+| 3 | React icons |
+| 4 | React Simple-Image-Slider  |
+
 
